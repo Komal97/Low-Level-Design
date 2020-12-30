@@ -1,3 +1,3 @@
 from .ExpenseManager import ExpenseManager
 from .UserService import UserService
-from .Expense import Expense
+from .Expense import EqualExpense, ExactExpense, PercentExpense
