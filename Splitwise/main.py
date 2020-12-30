@@ -14,9 +14,16 @@ def main():
     expense_manager.make_expense(['u2', 'u3'], 'u1', 1000, ExpenseType.EQUAL)
     user_service.show_user('u1')
     user_service.show_user('u2')
+    user_service.show_user('u3')
     
     expense_manager.make_expense(['u2', 'u3'], 'u1', [100, 200], ExpenseType.EXACT)
     user_service.show_user('u1')
     user_service.show_user('u2')
+    user_service.show_user('u3')
+    
+    expense_manager.make_expense(['u1', 'u3'], 'u2', 1000, ExpenseType.PERCENT, [30, 70])
+    user_service.show_user('u1')
+    user_service.show_user('u2')
+    user_service.show_user('u3')
     
 main()
